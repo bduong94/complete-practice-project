@@ -25,6 +25,8 @@ const AddUser = (props) => {
     if (Number(ageInput) < 1) {
       return;
     }
+
+    props.addNewUserHandler({ name: usernameInput, age: ageInput });
     //Reset states
     setUsernameInput("");
     setAgeInput("");
