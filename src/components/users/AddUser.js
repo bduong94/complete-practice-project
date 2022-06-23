@@ -22,6 +22,9 @@ const AddUser = (props) => {
       return;
     }
 
+    if (Number(ageInput) < 1) {
+      return;
+    }
     //Reset states
     setUsernameInput("");
     setAgeInput("");
