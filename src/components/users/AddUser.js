@@ -26,7 +26,12 @@ const AddUser = (props) => {
       return;
     }
 
-    props.addNewUserHandler({ name: usernameInput, age: ageInput });
+    props.addNewUserHandler({
+      id: Math.random().toString(),
+      name: usernameInput,
+      age: ageInput,
+    });
+
     //Reset states
     setUsernameInput("");
     setAgeInput("");
