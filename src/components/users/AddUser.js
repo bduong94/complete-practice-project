@@ -18,7 +18,7 @@ const AddUser = (props) => {
   };
 
   const clearErrorHandler = () => {
-    setError();
+    setError(null);
   };
 
   const addUserHandler = (e) => {
